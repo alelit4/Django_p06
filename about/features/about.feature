@@ -1,0 +1,5 @@
+Feature: About del sitio con lettuce
+
+    Scenario: Prueba del About 
+        Given Se accede a la url de about "/about"
+        Then Se muestra la cabecera "About"

@@ -1,0 +1,9 @@
+# Create your views here.
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.template import Context
+
+def home(request):
+  c = Context({'datos': ["Home", "Alexandra", "Hoy"]) 
+  return render(request, "home/templates/home.html", c)
+ 

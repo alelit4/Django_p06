@@ -1,0 +1,8 @@
+# Create your views here.
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.template import Context
+
+def contact(request):
+  c = Context({"datos": ["Contact", "Ale y Xandra", "01-JAN-2012"]}) 
+  return render(request, "contact/templates/contact.html", c)

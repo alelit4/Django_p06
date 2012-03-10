@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ datos.0 }} de la app </title>
+  </head>
+ <body>
+    <h1>About</h1>
+    <h2> Esta es la pagina {{ datos.0 }} de prueba de la applicacion </h2>
+    <p> 
+         Este es el ejemplo de páginas estáticas en Python
+         escrito por  {{ datos.1 }}  el día {{ datos.2 }}
+
+    </p>
+  </body>
+</html>
