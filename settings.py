@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/alexandra/Escritorio/mostly_static_pages/sqlite3.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/home/alexandra/Escritorio/Django_p06/sqlite3.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -101,7 +101,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'mostly_static_pages.urls'
+ROOT_URLCONF = 'Django_p06.urls'
 
 TEMPLATE_DIRS = (
     STATIC_ROOT + 'templates/',
@@ -120,11 +120,12 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'mostly_static_pages.home',
-    'mostly_static_pages.contact',
-    'mostly_static_pages.about',
+    'Django_p06.home',
+    'Django_p06.contact',
+    'Django_p06.about',
     'lettuce.django', 
-    
+     'Django_p06.help',
+     'Django_p06.signin',
     
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',

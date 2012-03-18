@@ -10,19 +10,19 @@
 				<img class="round" src="{{STATIC_URL}}/logo.png" alt= "Logo Principal"  />
 				<nav class="round">
 					<ul>
-						<li><a href = "" > {{titulo.0}} </a></li>
+						<li><a href = / > Home </a></li>
 						<li><a href = /help > Help </a></li>
 						<li><a href = /signin > Sign in </a></li>
 					</ul>
 				</nav>
 			</header>
 			<section class="round">
-				<h1>Home</h1>
+				<h1>Help</h1>
       	   <h2> Esta es la pagina {{ datos.0 }} de prueba de la applicacion </h2>
 			   <p> 
                    Este es el ejemplo de páginas estáticas en Python
                    escrito por  {{ datos.1 }}  el día {{ datos.2 }}
-                   <a href="#" class="signup_button round">Sign up now!</a>
+                  
 				</p>
 			</section>
 		</div>

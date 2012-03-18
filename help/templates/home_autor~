@@ -1,0 +1,8 @@
+{% extends "home.html" %}
+  {% block autor %}  
+      y el día {{datos.1}}
+
+  {% endblock %}  
+
+
+        

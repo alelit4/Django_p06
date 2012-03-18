@@ -1,16 +1,38 @@
-<link href="{{STATIC_URL}}/print.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="{{STATIC_URL}}/custom.css" rel="stylesheet" type="text/css" media="screen"/>
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ datos.0 }} de la app </title>
-  </head>
-  <body>
-    <h1>Contact</h1>
-    <h2> Esta es la pagina {{ datos.0 }} de prueba de la applicacion </h2>
-    <p> 
-         Este es el ejemplo de páginas estáticas en Python
-         escrito por  {{ datos.1 }}  el día {{ datos.2 }}
-
-    </p>
-  </body>
+	<head>
+		<title>{{ datos.0 }} de la app </title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<img class="round" src="{{STATIC_URL}}/logo.png" alt= "Logo Principal"  />
+				<nav class="round">
+					<ul>
+						<li><a href = "" > Home </a></li>
+						<li><a href = /help > Help </a></li>
+						<li><a href = /signin > Sign in </a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="round">
+				<h1>Contact</h1>
+      	   <h2> Esta es la pagina {{ datos.0 }} de prueba de la applicacion </h2>
+			   <p> 
+                   Este es el ejemplo de páginas estáticas en Python
+                   escrito por  {{ datos.1 }}  el día {{ datos.2 }}
+                  
+				</p>
+			</section>
+		</div>
+	</body>
+	<footer>
+		<nav class="round">
+			<ul>
+				<li><a href = "" > Home </a></li>
+				<li><a href = /about > About Us</a></li>
+			</ul>
+		</nav>
+	</footer>
 </html>

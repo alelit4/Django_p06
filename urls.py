@@ -15,9 +15,9 @@ urlpatterns = patterns('',
 
    
    url(r'^admin/', include(admin.site.urls)),
-   url(r'^home$', 'mostly_static_pages.home.views.home'),
-   url(r'^contact$', 'mostly_static_pages.contact.views.contact'),
-   url(r'^about$', 'mostly_static_pages.about.views.about'),
-   
-
+   url(r'^$', 'Django_p06.home.views.home'),
+   url(r'^contact$', 'Django_p06.contact.views.contact'),
+   url(r'^about$', 'Django_p06.about.views.about'),
+   url(r'^help$', 'Django_p06.help.views.help'),
+   url(r'^signin$', 'Django_p06.signin.views.signin'),
    )
